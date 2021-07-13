@@ -1,0 +1,11 @@
+<form [formGroup]="form" (ngSubmit)="loginSubmit()">
+  <fieldset>
+    <legend>Autenticación</legend>
+    
+    <label for="user">Usuario</label>
+    <input id="user" type="text" formControlName="user">
+    
+    <label for="password">Password</label>
+    <input id="password" type="password" formControlName="password">    <input type="submit" value="Autenticar">
+  </fieldset>
+</form>
